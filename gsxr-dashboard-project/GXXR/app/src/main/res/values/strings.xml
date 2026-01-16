@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GSXR</string>
+    <string name="speed_units">km/h</string>
+    <string name="speed_count">000</string>
+    <string name="lap_timer">88:88:88:88</string>
+    <string name="dash_clock">88:88:88</string>
+    <string name="current_gear">N</string>
+    <string name="zero_timer_state">00:00:00:00</string>
+    <string name="default_angle">--</string>
+    <string name="default_temp">---</string>
+</resources>

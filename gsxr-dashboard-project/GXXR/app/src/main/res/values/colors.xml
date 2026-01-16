@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="neutral_gear_color">#02F30C</color>
+    <color name="default_theme_color">#00e5ff</color>
+    <color name="lower_power_band">#0066FF</color>
+    <color name="rev_limiter_zone">#FF0000</color>
+    <color name="blink_white">#ffffff</color>
+    <color name="rear_brake_indicator">#F8D41E</color>
+    <color name="front_brake_indicator">#FB1B1B</color>
+    <color name="lean_angle_indicators">#FFFFFF</color>
+    <color name="lean_angle_meter_shadow">#86FFFFFF</color>
+</resources>

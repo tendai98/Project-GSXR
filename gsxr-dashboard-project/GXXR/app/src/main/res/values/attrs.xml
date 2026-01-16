@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ArcView">
+        <!-- ARC Widget -->
+        <attr name="arcStartAngle" format="float" />
+        <attr name="arcSweepAngle" format="float" />
+        <attr name="arcStrokeWidth" format="dimension" />
+
+        <attr name="arcColor" format="color" />
+        <attr name="arcShadowColor" format="color" />
+
+        <!-- NEW: shadow controls -->
+        <attr name="arcShadowRadius" format="dimension" />
+        <attr name="arcShadowDx" format="dimension" />
+        <attr name="arcShadowDy" format="dimension" />
+        <!-- ARC Widget -->
+
+    </declare-styleable>
+
+    <declare-styleable name="ParallelogramView">
+        <!-- existing attrs you already have -->
+        <attr name="paraFillColor" format="color" />
+        <attr name="paraShadowColor" format="color" />
+        <attr name="paraShadowRadius" format="dimension" />
+        <attr name="paraShadowDx" format="dimension" />
+        <attr name="paraShadowDy" format="dimension" />
+        <attr name="paraCornerRadius" format="dimension" />
+
+        <attr name="paraSkewDirection">
+            <enum name="none"  value="0" />
+            <enum name="right" value="1" />
+            <enum name="left"  value="-1" />
+        </attr>
+        <attr name="paraSkewAmount" format="float" />
+
+        <!-- NEW: single scale value + direction (which side is anchor) -->
+        <attr name="paraScale" format="float" />
+        <attr name="paraScaleDirection">
+            <enum name="none"   value="0" />
+            <enum name="left"   value="1" />
+            <enum name="right"  value="2" />
+            <enum name="top"    value="3" />
+            <enum name="bottom" value="4" />
+        </attr>
+    </declare-styleable>
+
+</resources>

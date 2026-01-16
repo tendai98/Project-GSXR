@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+    <VideoView
+        android:id="@+id/splash_vid"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_dashboard_view"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.01"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.02">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0"
+                android:src="@mipmap/left_temp_section_wdgt" />
+
+                <com.example.gxxr.ParallelogramView
+                    android:id="@+id/left_tire_section_temp"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="110dp"
+                    android:layout_marginStart="20dp"
+
+                    app:paraFillColor="#00E5FF"
+                    app:paraShadowColor="#8000E5FF"
+                    app:paraShadowRadius="4dp"
+                    app:paraShadowDx="0dp"
+                    app:paraShadowDy="0dp"
+                    app:paraCornerRadius="3dp"
+                    app:paraSkewDirection="left"
+                    app:paraSkewAmount="0.75"
+                    app:paraScaleDirection="left"
+                    app:paraScale="0.0"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                app:layout_constraintBottom_toBottomOf= "parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.35"
+                android:src="@mipmap/center_temp_section_wdgt" />
+
+                <com.example.gxxr.ParallelogramView
+                    android:id="@+id/center_tire_section_temp"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="33dp"
+
+                    app:paraFillColor="#00E5FF"
+                    app:paraShadowColor="#8000E5FF"
+                    app:paraShadowRadius="4dp"
+                    app:paraShadowDx="0dp"
+                    app:paraShadowDy="0dp"
+                    app:paraCornerRadius="3dp"
+                    app:paraSkewDirection="left"
+                    app:paraSkewAmount="0.75"
+                    app:paraScaleDirection="left"
+                    app:paraScale="0.0"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    />
+
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:text="°C"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/orbitron_xbold"
+            android:textStyle="bold|italic"
+            android:textColor="#948102"
+            android:shadowColor="#80F9DF2F"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.25"
+            app:layout_constraintHorizontal_bias="0.985"
+            />
+        <TextView
+            android:id="@+id/coolant_temp_value"
+            android:text="888"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/sevent_segment"
+            android:textStyle="italic"
+            android:textColor="#F9DF2F"
+            android:shadowColor="#F9DF2F"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.25"
+            app:layout_constraintHorizontal_bias="0.95"
+            />
+
+        <ImageView
+            android:id="@+id/gps_alert_indicator"
+            android:src="@mipmap/gps_warning"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.30"
+            app:layout_constraintHorizontal_bias="0.025"
+            />
+        <ImageView
+            android:id="@+id/headlight_indicator"
+            android:src="@mipmap/headlight"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.30"
+            app:layout_constraintHorizontal_bias="0.13"
+            />
+        <ImageView
+            android:id="@+id/lap_mode_indicator"
+            android:src="@mipmap/lap_mode"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4"
+            app:layout_constraintHorizontal_bias="0.025"
+            />
+        <ImageView
+            android:id="@+id/sensor_fault_indicator"
+            android:src="@mipmap/warning"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4"
+            app:layout_constraintHorizontal_bias="0.13"
+            />
+
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="220dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.03"
+            app:layout_constraintVertical_bias="1">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@mipmap/front_suspension_gauge" />
+
+                <com.example.gxxr.ParallelogramView
+                    android:id="@+id/front_suspension_state"
+
+                    android:layout_width="50dp"
+                    android:layout_height="170dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="33dp"
+
+                    app:paraFillColor="#00E5FF"
+                    app:paraShadowColor="#8000E5FF"
+                    app:paraShadowRadius="4dp"
+                    app:paraShadowDx="0dp"
+                    app:paraShadowDy="0dp"
+                    app:paraCornerRadius="5dp"
+                    app:paraSkewDirection="none"
+                    app:paraSkewAmount="0"
+                    app:paraScaleDirection="top"
+                    app:paraScale="0.0"
+
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintVertical_bias="2.5"/>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="220dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.97"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@mipmap/rear_suspension_gauge" />
+
+                <com.example.gxxr.ParallelogramView
+                    android:id="@+id/rear_suspension_state"
+
+                    android:layout_width="50dp"
+                    android:layout_height="170dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="33dp"
+
+                    app:paraFillColor="#00E5FF"
+                    app:paraShadowColor="#8000E5FF"
+                    app:paraShadowRadius="4dp"
+                    app:paraShadowDx="0dp"
+                    app:paraShadowDy="0dp"
+                    app:paraCornerRadius="5dp"
+                    app:paraSkewDirection="none"
+                    app:paraSkewAmount="0"
+                    app:paraScaleDirection="top"
+                    app:paraScale="0"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="2.5"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="450dp"
+                android:layout_height="450dp"
+                android:layout_marginTop="200dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@mipmap/gsxr_tachometer_wdgt" />
+
+                <com.example.gxxr.ArcView
+                    android:id="@+id/tachometer_arc_wdgt"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="200dp"
+                    app:arcColor="@color/default_theme_color"
+                    app:arcStartAngle="160"
+                    app:arcSweepAngle="0"
+                    app:arcStrokeWidth="30dp"
+                    app:arcShadowColor="@color/default_theme_color"
+                    app:arcShadowDx="0dp"
+                    app:arcShadowDy="0dp"
+                    app:arcShadowRadius="3dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_gravity="center" />
+
+
+                <TextView
+                    android:id="@+id/max_left_lean_angle_txt"
+                    android:text="@string/default_angle"
+                    android:textColor="@color/default_theme_color"
+                    android:textStyle="bold"
+                    android:shadowColor="@color/default_theme_color"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="12"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/orbitron_xbold"
+                    android:layout_width="30dp"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintHorizontal_bias="0.27"
+                    app:layout_constraintVertical_bias="0.75"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <com.example.gxxr.ArcView
+                    android:id="@+id/right_lean_angle_meter"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="200dp"
+                    app:arcColor="@color/lean_angle_indicators"
+                    app:arcStartAngle="272"
+                    app:arcSweepAngle="90"
+                    app:arcStrokeWidth="10dp"
+                    app:arcShadowColor="@color/lean_angle_indicators"
+                    app:arcShadowDx="0dp"
+                    app:arcShadowDy="0dp"
+                    app:arcShadowRadius="3dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_gravity="center" />
+
+
+                <com.example.gxxr.ArcView
+                    android:id="@+id/max_right_lean_angle_meter"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="200dp"
+                    app:arcColor="@color/default_theme_color"
+                    app:arcStartAngle="272"
+                    app:arcSweepAngle="50"
+                    app:arcStrokeWidth="2dp"
+                    app:arcShadowColor="@color/default_theme_color"
+                    app:arcShadowDx="0dp"
+                    app:arcShadowDy="0dp"
+                    app:arcShadowRadius="3dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_gravity="center" />
+
+
+                <com.example.gxxr.ArcView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="200dp"
+                    app:arcColor="@color/lean_angle_meter_shadow"
+                    app:arcStartAngle="272"
+                    app:arcSweepAngle="90"
+                    app:arcStrokeWidth="10dp"
+                    app:arcShadowColor="@color/lean_angle_meter_shadow"
+                    app:arcShadowDx="0dp"
+                    app:arcShadowDy="0dp"
+                    app:arcShadowRadius="3dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@+id/lean_angle_txt"
+                    android:text="@string/default_angle"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:shadowColor="@color/white"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="12"
+                    android:textSize="35sp"
+                    android:fontFamily="@font/orbitron_xbold"
+                    android:layout_width="70dp"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/max_right_lean_angle_txt"
+                    android:text="@string/default_angle"
+                    android:textColor="@color/default_theme_color"
+                    android:textStyle="bold"
+                    android:shadowColor="@color/default_theme_color"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="12"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/orbitron_xbold"
+                    android:layout_width="30dp"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintHorizontal_bias="0.73"
+                    app:layout_constraintVertical_bias="0.75"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <com.example.gxxr.ArcView
+                    android:id="@+id/left_lean_angle_meter"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="200dp"
+                    app:arcColor="@color/lean_angle_indicators"
+                    app:arcStartAngle="270"
+                    app:arcSweepAngle="-90"
+                    app:arcStrokeWidth="10dp"
+                    app:arcShadowColor="@color/lean_angle_indicators"
+                    app:arcShadowDx="0dp"
+                    app:arcShadowDy="0dp"
+                    app:arcShadowRadius="3dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_gravity="center" />
+
+                <com.example.gxxr.ArcView
+                    android:id="@+id/max_left_lean_angle_meter"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="200dp"
+                    app:arcColor="@color/default_theme_color"
+                    app:arcStartAngle="270"
+                    app:arcSweepAngle="-50"
+                    app:arcStrokeWidth="2dp"
+                    app:arcShadowColor="@color/default_theme_color"
+                    app:arcShadowDx="0dp"
+                    app:arcShadowDy="0dp"
+                    app:arcShadowRadius="3dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_gravity="center" />
+
+                <com.example.gxxr.ArcView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="200dp"
+                    app:arcColor="@color/lean_angle_meter_shadow"
+                    app:arcStartAngle="270"
+                    app:arcSweepAngle="-90"
+                    app:arcStrokeWidth="10dp"
+                    app:arcShadowColor="@color/lean_angle_meter_shadow"
+                    app:arcShadowDx="0dp"
+                    app:arcShadowDy="0dp"
+                    app:arcShadowRadius="3dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_gravity="center" />
+
+
+                <com.example.gxxr.ArcView
+                    android:id="@+id/front_brake_trigger"
+                    android:layout_width="410dp"
+                    android:layout_height="410dp"
+                    android:layout_marginTop="200dp"
+                    app:arcColor="@color/front_brake_indicator"
+                    app:arcStartAngle="230"
+                    app:arcSweepAngle="40"
+                    app:arcStrokeWidth="10dp"
+                    app:arcShadowColor="@color/front_brake_indicator"
+                    app:arcShadowDx="0dp"
+                    app:arcShadowDy="0dp"
+                    app:arcShadowRadius="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_gravity="center" />
+
+                <com.example.gxxr.ArcView
+                    android:id="@+id/rear_brake_trigger"
+                    android:layout_width="410dp"
+                    android:layout_height="410dp"
+                    android:layout_marginTop="200dp"
+                    app:arcColor="@color/rear_brake_indicator"
+                    app:arcStartAngle="272"
+                    app:arcSweepAngle="40"
+                    app:arcStrokeWidth="10dp"
+                    app:arcShadowColor="@color/rear_brake_indicator"
+                    app:arcShadowDx="0dp"
+                    app:arcShadowDy="0dp"
+                    app:arcShadowRadius="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@+id/dash_clock"
+                    android:text="@string/dash_clock"
+                    android:textColor="#5DEC05"
+                    android:textSize="23sp"
+                    android:shadowColor="#4CFF00"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="7"
+                    android:fontFamily="@font/sevent_segment"
+                    android:layout_width="140dp"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.77"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintVertical_bias="0.02">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0"
+                android:src="@mipmap/front_brake_temp_wdgt" />
+
+                <com.example.gxxr.ParallelogramView
+                    android:id="@+id/front_brake_disk_temp"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+
+                    app:paraFillColor="#00E5FF"
+                    app:paraShadowColor="#8000E5FF"
+                    app:paraShadowRadius="4dp"
+                    app:paraShadowDx="0dp"
+                    app:paraShadowDy="0dp"
+                    app:paraCornerRadius="3dp"
+                    app:paraSkewDirection="right"
+                    app:paraSkewAmount="0.4"
+                    app:paraScaleDirection="right"
+                    app:paraScale="0.0"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginBottom="60dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="35dp"
+                    />
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.65"
+                    android:src="@mipmap/coolant_temp_wdgt" />
+
+                <com.example.gxxr.ParallelogramView
+                    android:id="@+id/coolant_temp"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    app:paraFillColor="#F9DF2F"
+                    app:paraShadowColor="#80F9DF2F"
+
+                    app:paraShadowRadius="4dp"
+                    app:paraShadowDx="0dp"
+                    app:paraShadowDy="0dp"
+                    app:paraCornerRadius="3dp"
+                    app:paraSkewDirection="right"
+                    app:paraSkewAmount="0.4"
+                    app:paraScaleDirection="right"
+                    app:paraScale="0.0"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="30dp"
+                    />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.025">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/gear_indicator"
+                android:layout_width="110dp"
+                android:layout_height="80dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@mipmap/gsxr_gear_indicator" />
+
+            <TextView
+                android:id="@+id/gear_counter_txt"
+                android:text="@string/current_gear"
+                android:shadowColor="@color/neutral_gear_color"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"
+                android:textColor="@color/neutral_gear_color"
+                android:textStyle="bold"
+                android:textSize="50sp"
+                android:textAlignment="center"
+                android:fontFamily="@font/orbitron_xbold"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.4"
+
+                />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lap_timer_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.98">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/laptimer_enable_state"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/gsxr_laptimer_on"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/lap_timer_clk"
+                    android:text="@string/lap_timer"
+                    android:textColor="#FF000000"
+                    android:textSize="18sp"
+                    android:shadowColor="#00000000"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="10"
+                    android:fontFamily="@font/sevent_segment"
+                    android:layout_width="150dp"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.6"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.42"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.025">
+
+            <TextView
+                android:id="@+id/speed_counter_txt"
+                android:text="@string/speed_count"
+                android:textColor="#00E5FF"
+                android:textStyle="bold|italic"
+                android:shadowColor="@color/default_theme_color"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="12"
+                android:textSize="55sp"
+                android:fontFamily="@font/orbitron_xbold"
+                android:layout_width="150dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="@string/speed_units"
+                android:textColor="#C5F0F4"
+                android:textStyle="bold|italic"
+                android:textSize="15sp"
+                android:shadowColor="#00e5ff"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"
+                android:fontFamily="@font/orbitron_xbold"
+                android:layout_width="50dp"
+                android:textAlignment="center"
+                android:layout_marginTop="9dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
