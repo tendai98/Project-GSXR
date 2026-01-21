@@ -5,11 +5,11 @@ A personal R&D repo tied to my Suzuki GSX-R project: data logging, hardware expe
 
 ## What’s inside
 
-- **Python logging tools** to capture telemetry / sensor streams and write them to files for later analysis (example script: `gsxr_logger_v5.py`). :contentReference[oaicite:0]{index=0}
-- **Hardware/firmware experiments** under `hardware-code/` (microcontroller-side code and prototypes). :contentReference[oaicite:1]{index=1}
-- **Android dashboard project** under `gsxr-dashboard-android-project/GXXR/` (custom Suzuki GSXR Dashboard). :contentReference[oaicite:2]{index=2}
-- **Notebooks** under `notebooks/` for exploration, plotting, and analysis. :contentReference[oaicite:3]{index=3}
-- **Release artifacts** under `gsxr-dashboard-releases/` (built outputs / packaged versions). :contentReference[oaicite:4]{index=4}
+- **Python logging tools** to capture telemetry / sensor streams and write them to files for later analysis (example script: `gsxr_logger_v5.py`).
+- **Hardware/firmware experiments** under `hardware-code/` (microcontroller-side code and prototypes).
+- **Android dashboard project** under `gsxr-dashboard-android-project/GXXR/` (custom Suzuki GSXR Dashboard).
+- **Notebooks** under `notebooks/` for exploration, plotting, and analysis.
+- **Release artifacts** under `gsxr-dashboard-releases/` (built outputs / packaged versions).
 
 
 ## Getting started
@@ -55,5 +55,6 @@ the dashboard expects live data:
 Prebuilt releases (if included) are stored in:
 
 * `gsxr-dashboard-releases/` ([GitHub][2])
+
 
 
