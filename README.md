@@ -40,7 +40,7 @@ python gsxr_logger_v5.py
 
 The Android project lives at:
 
-* `gsxr-dashboard-android-project/GXXR/` ([GitHub][1])
+* `gsxr-dashboard-android-project/GXXR/`
 
 Typical workflow:
 
@@ -55,6 +55,7 @@ the dashboard expects live data:
 Prebuilt releases (if included) are stored in:
 
 * `gsxr-dashboard-releases/` ([GitHub][2])
+
 
 
 
