@@ -54,7 +54,8 @@ the dashboard expects live data:
 
 Prebuilt releases (if included) are stored in:
 
-* `gsxr-dashboard-releases/` ([GitHub][2])
+* `gsxr-dashboard-releases/`
+
 
 
 
