@@ -2,7 +2,6 @@
 
 A personal R&D repo tied to my Suzuki GSX-R project: data logging, hardware experiments, a custom dashboard, and analysis notebooks.
 
-This repository is a working lab notebook more than a polished product. Expect rapid iteration, multiple versions of scripts, and evolving data formats.
 
 ## What’s inside
 
@@ -56,4 +55,5 @@ the dashboard expects live data:
 Prebuilt releases (if included) are stored in:
 
 * `gsxr-dashboard-releases/` ([GitHub][2])
+
 
